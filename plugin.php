@@ -71,15 +71,17 @@ class FontAwesomeMore {
                     'name'      => '',
                     'title'     => '',
                     'size'      => '',
-                    'space'     => ''
+                    'space'     => '',
+                    'rotate'    => ''
                 ), $params ) );
 
         $icon_title = $title ? 'title="' . $title . '" ' : '';
         $space      = $space == 'false' ? '' : '&nbsp;';
         $name       = self::famPrefix($name);
         $size       = self::famPrefix($size);
+        $rotate     = self::famPrefix($rotate);
 
-        $icon = '<i class="' . $name . ' ' . $size . '" ' . $icon_title . '>' . $space . '</i>';
+        $icon = '<i class="' . $name . ' ' . $size . ' ' . $rotate  . '" ' . $icon_title . '>' . $space . '</i>';
 
         return $icon;
     }
