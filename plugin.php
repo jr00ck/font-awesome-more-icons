@@ -71,6 +71,8 @@ class FontAwesomeMore {
                     'name'      => '',
                     'title'     => '',
                     'size'      => '',
+                    'base'      => '',
+                    'shade'     => '',
                     'space'     => ''
                 ), $params ) );
 
@@ -78,8 +80,14 @@ class FontAwesomeMore {
         $space      = $space == 'false' ? '' : '&nbsp;';
         $name       = self::famPrefix($name);
         $size       = self::famPrefix($size);
+        $base       = self::famPrefix($base);
+        $shade      = self::famPrefix($shade);
 
-        $icon = '<i class="' . $name . ' ' . $size . '" ' . $icon_title . '>' . $space . '</i>';
+        $icon = '<i class="' . $name . ' ' . $size . ' ' . $shade . '" ' . $icon_title . '>' . $space . '</i>';
+
+        if(!empty($base)){
+            $icon = '<span class="icon-stack ' . $size . '"><i class="' . $base . ' icon-stack-base"></i>' . $icon . '</span>';
+        }
 
         return $icon;
     }
