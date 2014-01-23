@@ -3,7 +3,7 @@
 Plugin Name: Font Awesome More Icons
 Plugin URI: http://blog.webguysaz.com/font-awesome-more-icons-wordpress-plugin/
 Description: Easily use the Font Awesome icons in WordPress but with MORE icons and MORE features using HTML, shortcodes, or TinyMCE plugin.
-Version:  3.5
+Version:  4.0
 Author: Web Guys
 Author URI: http://webguysaz.com
 Author Email: jeremy@webguysaz.com
@@ -18,7 +18,7 @@ Credits:
 
 class FontAwesomeMore {
     private static $instance;
-    const VERSION = ' 3.5';
+    const VERSION = ' 4.0';
 
     private static function has_instance() {
         return isset(self::$instance) && self::$instance != null;
@@ -58,7 +58,7 @@ class FontAwesomeMore {
         global $wp_styles;
         $protocol = empty($_SERVER['HTTPS']) ? 'http:' : 'https:';
 
-        wp_enqueue_style( 'font-awesome-styles', $protocol . '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css', array(), self::VERSION, 'all');
+        wp_enqueue_style( 'font-awesome-styles', $protocol . '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css', array(), self::VERSION, 'all');
         wp_enqueue_style( 'font-awesome-corp-styles', plugins_url( 'assets/css/font-awesome-corp.css', __FILE__  ), array(), self::VERSION, 'all');
         wp_enqueue_style( 'font-awesome-ext-styles', plugins_url( 'assets/css/font-awesome-ext.css', __FILE__  ), array(), self::VERSION, 'all');
         wp_enqueue_style( 'font-awesome-social-styles', plugins_url( 'assets/css/font-awesome-social.css', __FILE__  ), array(), self::VERSION, 'all');
@@ -85,8 +85,8 @@ class FontAwesomeMore {
     }
 
     private function famPrefix($item){
-        if(stripos($item, 'icon-') === false){
-            $item = 'icon-' . $item;
+        if(stripos($item, 'icon-') === false || stripos($item, 'fa-')){
+            $item = 'fa-' . $item;
         }
         return $item;
     }

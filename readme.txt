@@ -4,8 +4,8 @@ Plugin URI: http://blog.webguysaz.com/font-awesome-more-icons-wordpress-plugin/
 Donate link: http://blog.webguysaz.com/donate/
 Tags: icons, font-awesome, font-awesome-more, fontstrap, font icon, UI, icon font, bootstrap
 Requires at least: 3.0
-Tested up to: 3.6
-Stable tag: 3.5
+Tested up to: 3.8
+Stable tag: 4.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -171,6 +171,10 @@ Nope. No settings page is created. Just activate and start using. No configurati
 1. Font Awesome More-specific icons not included in standard Font Awesome icon set
 
 == Changelog ==
+
+= 4.0 =
+* WARNING: THIS UPDATE BREAKS PREVIOUS ICONS ADDED VIA HTML!!! PLEASE UPDATE YOUR HTML CODE FOR THE NEW FONT AWESOME 4.0 PREFIXES [read more](http://blog.webguysaz.com/...). Icons added via shortcode will still work.
+* New: Now using Font Awesome 4.0.3 (breaks backwards compatibility)
 
 = 3.5 =
 * New: Shortcode option to remove whitespace after icon with "space=false"
