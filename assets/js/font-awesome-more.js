@@ -2,11 +2,11 @@
 	var ICONS;
 
 	var icon = function(id) {
-		return '<i class="icon-' + id + '"></i>';
+		return '<i class="fa-' + id + '"></i>';
 	}
 
 	var shortcode = function(id) {
-		return '[icon name="icon-' + id + '"]';
+		return '[icon name="fa-' + id + '"]';
 	}
 
 	var createControl = function(name, controlManager) {

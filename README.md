@@ -18,23 +18,23 @@ All code examples on the Font Awesome site apply: [http://gregoryloucas.github.i
 
 **Examples**
 
-WordPress icon <i class="icon-wordpress"></i>
+WordPress icon <i class="fa-wordpress"></i>
 
-`<i class="icon-wordpress"></i>`
+`<i class="fa-wordpress"></i>`
 
 Google icon 2x size
 
-`<i class="icon-google icon-2x"></i>`
+`<i class="fa-google fa-2x"></i>`
 
 Google Chrome icon large size
 
-`<i class="icon-chrome icon-large"></i>`
+`<i class="fa-chrome fa-lg"></i>`
 
 = Shortcode Option =
 
 Don't want to worry about HTML tags?  You can use a shortcode in your posts, pages and even widgets to display a Font Awesome More icon.
 
-*Note:* In my plugin (as of 3.5), the "icon-" prefix is no longer needed in shortcode attributes. This is in preperation for the [Font Awesome 4.0](http://blog.fontawesome.io/2013/06/04/upcoming-changes-in-font-awesome-3.2-and-4.0/) release that will change the prefixes. Therefore, I highly recommend that you only use the shortcode options for icons, and not HTML, so that the plugin can handle the prefixes for you and your icons will not break when Font Awesome 4.0 comes out.
+*Note:* The standalone "fa" & "fa-" prefix are not needed when using shortcodes. They will work fine if included, but the plugin will handle the proper prefixes when using shortcodes. When using HTML, of course, your output must use proper Font Awesome formats.
 
 
 WordPress icon
@@ -57,20 +57,18 @@ PayPal icon using shortcode within PHP instead of using the HTML option (e.g. wi
 
 Now you can turn off the automatic spacing after an icon with "space=false". See screenshots for an example of results.
 
-In preperation for [Font Awesome 4.0](http://blog.fontawesome.io/2013/06/04/upcoming-changes-in-font-awesome-3.2-and-4.0/), you can also leave off the "icon-" prefix on your shortcode options, as that prefix will be changing. The plugin will automatically add the appropriate prefix for you.
-
-Evernote icon with no trailing space (note no "icon-" prefix)
+Evernote icon with no trailing space (note no prefix needed on icon name)
 
 `[icon name=evernote space=false]`
 
 = New Shortcode Options since 3.4 =
 
-Now you can easily set the size and a title/alt text to icons within shortcodes. Size options are large, 2x, 3x, or 4x.
+Now you can easily set the size and a title/alt text to icons within shortcodes. Size options are lg, 2x, 3x, or 4x.
 
 
 WordPress icon (large size)
 
-`[icon name="wordpress" size="large"]`
+`[icon name="wordpress" size="lg"]`
 
 Google icon (3x size)
 
