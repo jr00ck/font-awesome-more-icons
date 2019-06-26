@@ -14,11 +14,15 @@ Easily use the Font Awesome icons in WordPress but with MORE icons and MORE feat
 
 == Description ==
 
+**This plugin has been abandoned by me (the author) years ago. The Font Awesome project now has an [official WordPress plugin](https://wordpress.org/plugins/font-awesome/) in the repo that I highly recommend.**
+
+= Old Plugin Description Below =
+
 Font Awesome More (Fontstrap) provides easy use of all icons from the [Font Awesome](http://fortawesome.github.io/Font-Awesome/) set, but with [MORE icons](http://blog.webguysaz.com/font-awesome-more-fontstrap-icon-additions/) from the [Fontstrap](http://gregoryloucas.github.io/Font-Awesome-More/) extension set and with MORE features. The icons are infinitely scalable and screen reader compatible.
 
 A full list of all 400+ icons is available here:
 
-[Font Awesome icons](http://fortawesome.github.io/Font-Awesome/icons/)  
+[Font Awesome icons](http://fortawesome.github.io/Font-Awesome/icons/)
 [Font Awesome More (Fontstrap) icons](http://blog.webguysaz.com/font-awesome-more-icon-list-plugin-version-3-3/)
 
 To use any of the Font Awesome More icons on your WordPress site you have three options:
@@ -114,7 +118,7 @@ Google Chrome icon (4x size with title text)
 
 = Icons =
 
-[Font Awesome icons](http://fortawesome.github.io/Font-Awesome/icons/)  
+[Font Awesome icons](http://fortawesome.github.io/Font-Awesome/icons/)
 [Font Awesome More (Fontstrap) icons](http://blog.webguysaz.com/font-awesome-more-fontstrap-icon-additions/)
 
 == Installation ==
